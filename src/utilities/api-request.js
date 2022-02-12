@@ -1,19 +1,18 @@
-export default async function apiRequest(url = 'https://beta2.api.climatiq.io/estimate', method = 'POST', payload = null) {
+export default async function apiRequest(method = 'POST', payload = null) {
   const options = { method };
-  payload = {
-    "emission_factor": "electricity-energy_source_grid_mix",
-    "parameters":
-    {
-      "energy": 4200,
-      "energy_unit": "kWh"
-    }
-  }
+
   if (payload) {
+    const payloadShape = {
+      "emission_factor": "passenger_vehicle-vehicle_type_motorcycle-fuel_source_na-engine_size_na-vehicle_age_na-vehicle_weight_na",
+      "parameters": {
+        "distance": parseInt(payload.milesDriven),
+        "distance_unit": "mi"
+      }
+    }
     options.headers = { 'Content-Typed': 'application/json' };
-    options.body = JSON.stringify(payload);
+    options.body = JSON.stringify(payloadShape);
   }
 
-  console.log(process.env.REACT_APP_API_KEY)
   const apiKey = process.env.REACT_APP_API_KEY
 
   if (apiKey) {
@@ -21,7 +20,7 @@ export default async function apiRequest(url = 'https://beta2.api.climatiq.io/es
     options.headers.Authorization = `Bearer ${apiKey}`;
   }
   try {
-    const res = await fetch(url, options);
+    const res = await fetch('https://beta2.api.climatiq.io/estimate', options);
     if (res.ok) return res.json();
   }
   catch (error) {

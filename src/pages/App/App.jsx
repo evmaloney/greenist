@@ -7,15 +7,10 @@ import HomePage from '../HomePage/HomePage'
 import TransportationPage from '../TransportationPage/TransportationPage'
 // import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage'
 import NavBar from '../../components/NavBar/NavBar'
-import sendRequest from '../../utilities/send-request'
 import apiRequest from '../../utilities/api-request'
 
 export default function App() {
   const [user, setUser] = useState(getUser())
-
-  useEffect(async () => {
-    console.log(await apiRequest());
-  }, [])
 
   return (
     <main className="App">

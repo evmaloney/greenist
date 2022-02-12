@@ -1,26 +1,24 @@
 import { useState } from 'react';
 
-export default function TransportationForm() {
-  const [transportationData, setTransportationData] = useState({
+export default function TransportationForm({ handleAddCarbon }) {
+  const [transportationCarbon, setTransportationCarbon] = useState({
     milesDriven: ''
   });
 
   function handleChange(evt) {
-    setTransportationData({ ...transportationData, [evt.target.name]: evt.target.value });
+    setTransportationCarbon({ ...transportationCarbon, [evt.target.name]: evt.target.value });
   }
 
   function handleSubmit(evt) {
     evt.preventDefault();
-
+    handleAddCarbon(transportationCarbon);
   }
 
   return (
-    <div onSubmit={handleSubmit}>
-      <form>
-        <label>Miles Driven Per Year: </label>
-        <input type="text" name="milesDriven" value={transportationData.milesDriven} onChange={handleChange} required />
-        <button type="submit">Get Carbon Output</button>
-      </form>
-    </div>
+    <form onSubmit={handleSubmit}>
+      <label>Miles Driven Per Year: </label>
+      <input type="text" name="milesDriven" value={transportationCarbon.milesDriven} onChange={handleChange} required />
+      <button type="submit">Get Carbon Output</button>
+    </form>
   )
 }
