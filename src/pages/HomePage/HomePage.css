@@ -1,0 +1,24 @@
+.blueButton {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
+  height: 200px;
+  width: 200px;
+  text-decoration: none;
+  color: #FFFDD0;
+  font-size: 20px;
+  font-weight: 600;
+  background: #2832C2;
+  border: 8px solid #241571;
+  border-radius: 25px;
+}
+
+.blueButtonDiv {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-around;
+  margin-left:45px;
+  margin-right: 45px;
+}

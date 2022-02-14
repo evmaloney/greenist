@@ -1,8 +1,10 @@
 export default function CarbonOutput({ data }) {
-  const tonsCarbon = (data?.co2e * 0.00110231).toFixed(2)
+  const tonsCarbon = (data.co2e * 0.00110231).toFixed(2)
 
   return (
-    <p>Each year, your driving habits are polluting our air
-      with {tonsCarbon} tons of carbon.</p>
+    <div className='outputDiv'>
+      <p className="outputs">Each year, your driving habits are polluting our air
+        with {tonsCarbon} tons of carbon.</p>
+    </div>
   )
 }

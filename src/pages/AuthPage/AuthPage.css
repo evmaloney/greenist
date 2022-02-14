@@ -1,9 +1,16 @@
+.slogan {
+  font-weight: 500;
+}
+
+.slogan span {
+  color: var(--dark-green);
+  font-size: 18px;
+  font-family: 'Rowdies';
+}
+
 .AuthPage {
   height: 100%;
   justify-content: space-between;
-  /* align-items: center; */
-  /* align-content: center; */
-  /* justify-items: center; */
   background-color: white;
   border: 2px solid black;
   border-radius: 10px;
@@ -15,8 +22,6 @@
 }
 
 .AuthPage span {
-  /* margin-top: 3vmin; */
-  /* text-align: center; */
   color: black;
   font-size: 18px;
   font-weight: 800;

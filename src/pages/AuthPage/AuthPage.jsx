@@ -10,6 +10,7 @@ export default function AuthPage({ setUser }) {
   return (
     <main>
       <Logo className="mainLogo" />
+      <p className="slogan">some are green. others are greener. you're the <span>Greenist</span></p>
       <div className="AuthPage">
         <div>
           <p>{showLogin ? 'Not yet' : 'Already'} a member?

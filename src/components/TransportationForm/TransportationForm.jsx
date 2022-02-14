@@ -12,11 +12,10 @@ export default function TransportationForm({ handleAddCarbon }) {
   function handleSubmit(evt) {
     evt.preventDefault();
     handleAddCarbon(transportationCarbon);
-    // console.log(transportationCarbon.milesDriven)
   }
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form className="forms" onSubmit={handleSubmit}>
       <label>Miles Driven Per Year: </label>
       <input type="text" name="milesDriven" value={transportationCarbon.milesDriven} onChange={handleChange} required />
       <button type="submit">Get Carbon Output</button>
