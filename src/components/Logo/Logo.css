@@ -1,0 +1,33 @@
+.Logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  justify-items: center;
+  font-family: 'Rowdies', cursive;
+  font-size: 32px;
+  color: var(--dark-green);
+  background-color: var(--blue);
+  border: 6px solid var(--green);
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.miniLogo {
+  width: 45px;
+  height: 45px;
+  font-size: 16px;
+  border-width: 3px;
+  margin-top: 0px;
+}
+
+.mainLogo {
+  width: 135px;
+  height: 135px;
+  font-size: 48px;
+  border-width: 9px;
+}

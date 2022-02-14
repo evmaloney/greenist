@@ -4,7 +4,7 @@ import Logo from '../../components/Logo/Logo'
 export default function HomePage() {
   return (
     <main>
-      <Logo />
+      <Logo  />
       <Link to="/transportation">Carbon Output from Transportation</Link>
     </main>
   )

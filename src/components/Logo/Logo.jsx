@@ -1,7 +1,9 @@
-export default function Logo() {
+import './Logo.css';
+
+export default function Logo({ className }) {
   return (
-    <div>
-      <h1>Greenist</h1>
+    <div className={`Logo ${className}`} >
+      Greenist
     </div>
   );
 }

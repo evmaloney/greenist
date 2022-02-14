@@ -7,7 +7,7 @@ import HomePage from '../HomePage/HomePage'
 import TransportationPage from '../TransportationPage/TransportationPage'
 // import OrderHistoryPage from '../OrderHistoryPage/OrderHistoryPage'
 import NavBar from '../../components/NavBar/NavBar'
-import apiRequest from '../../utilities/api-request'
+// import apiRequest from '../../utilities/api-request'
 
 export default function App() {
   const [user, setUser] = useState(getUser())

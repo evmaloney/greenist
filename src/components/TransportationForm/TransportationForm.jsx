@@ -12,6 +12,7 @@ export default function TransportationForm({ handleAddCarbon }) {
   function handleSubmit(evt) {
     evt.preventDefault();
     handleAddCarbon(transportationCarbon);
+    // console.log(transportationCarbon.milesDriven)
   }
 
   return (
