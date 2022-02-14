@@ -19,20 +19,8 @@ APIs used include:
 ## Getting Started
 [Click me](https://greenist.herokuapp.com/) to get started!
 
-Once the web page has loaded, it will look like this:
-
-
-![alt text](https://i.imgur.com/dXdZasV.png "Start Screen")
-
-
-Click the "Deal" button to start the game. After the dealer deals the initial hands, you have the choice to either "Hit" or "Stand":
-
-![alt text](https://i.imgur.com/ukxnDYc.png "Cards Dealt")
-
-
-If you don't bust and click "Stand", the dealer will deal their cards and the closest to 21 wins:
-
-![alt text](https://i.imgur.com/kp10Z2a.png "Winner Screen")
+At the carbon calculator portion, enter in your infor and it will display your carbon output like this:
+https://i.imgur.com/Xls8LDk.png
 
 
 ## Next Steps
