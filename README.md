@@ -17,7 +17,7 @@ APIs used include:
 - Climatiq API found at www.climatiq.io
 
 ## Getting Started
-[Click me](https://greenist.herokuapp.com/) to get started!
+[Click me](https://greenist-806ea9e5c312.herokuapp.com/) to get started!
 
 At the carbon calculator portion, enter in your infor and it will display your carbon output like this:
 https://i.imgur.com/Xls8LDk.png
